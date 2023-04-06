@@ -10,4 +10,8 @@ app.get('/test', (req, res) => {
   res.send("My cloud function API is working! 🤯");
 });
 
+app.get('/hello', (req, res) => {
+  res.send("Hello there!!")
+});
+
 export const api = functions.https.onRequest(app);
